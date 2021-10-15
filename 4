@@ -1,1 +1,9 @@
-4
+import numpy as np
+print('Добро пожаловать в программу, которая предсказывает приблизительный размер популяции организмов!')
+startnum = int(input('Введите стартовое количество: ', ))
+average_daily = int(input('Введите среднесуточное увеличение в процентах: ', ))
+numofdays = int(input('Количество дней для размоножения: ', ))
+print('\nДень    Популяция')
+for i in range(numofdays):
+    print(i + 1, '     ', startnum)
+    startnum = startnum+startnum*(average_daily / 100)
