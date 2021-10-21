@@ -1,8 +1,9 @@
-a = 1
-b = 0
-print('Введите положительные числа: ')
-while a < 0:
-    a = int(input())
-if a > 0:
-    b += a
-    print('Их сумма равна: ', b)
+print('Введите ряд положительных чисел через enter:')
+print('(чтобы обозначить конец ряда, введите любое отрицательное число)')
+number = 1
+sum = 0
+while number > 0:
+    number = int(input())
+    if number > 0:
+        sum = sum + number
+print('Сумма цифр равна:', sum)
