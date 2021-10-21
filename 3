@@ -1,7 +1,10 @@
-a = int(input('Введите число, факториал которого надо найти: '))
-b = 1
-c = 1
-while b != a:
-    b += 1
-    c *= b
-    print('Факториал числа равен: ', c)
+print('Введите неотрицательное целое число, чтобы получить его факториал:')
+number = int(input())
+factorial = 1
+if number == 0:
+    print('1')
+else:
+    while number > 0 :
+        factorial = factorial * number 
+        number = number - 1
+print('Факториал вашего числа равен: ', factorial)
